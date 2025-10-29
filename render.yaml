@@ -2,7 +2,7 @@ services:
   - type: web
     name: tnemyap
     env: docker
-    plan: starter
+    plan: basic
     autoDeploy: true
     envVars:
       - key: NODE_ENV
@@ -33,10 +33,11 @@ services:
 
   - type: redis
     name: tnemyap-redis
-    plan: starter
-    ipAllowList: []   # <— WAJIB ada (boleh kosong)
+    plan: basic
+    ipAllowList: []
 
 databases:
   - name: tnemyap-db
-    plan: starter
-    ipAllowList: []   # <— direkomendasikan (bisa kosong)
+    plan: basic
+    version: 16
+    ipAllowList: []
