@@ -34,7 +34,9 @@ services:
   - type: redis
     name: tnemyap-redis
     plan: starter
+    ipAllowList: []   # <— WAJIB ada (boleh kosong)
 
 databases:
   - name: tnemyap-db
     plan: starter
+    ipAllowList: []   # <— direkomendasikan (bisa kosong)
