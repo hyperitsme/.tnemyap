@@ -30,14 +30,3 @@ services:
         generateValue: true
       - key: QUOTE_TTL_SEC
         value: 180
-
-  - type: redis
-    name: tnemyap-redis
-    plan: basic
-    ipAllowList: []
-
-databases:
-  - name: tnemyap-db
-    plan: basic
-    version: 16
-    ipAllowList: []
